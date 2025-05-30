@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:4.0-management
+    container_name: rabbitmqws
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    environment:
+      RABBITMQ_DEFAULT_USER: login
+      RABBITMQ_DEFAULT_PASS: **
+  api-srvc:
+    build:
+      context: .
+      dockerfile: ./api-srvc.dockerfile
+      args:
+        GIT_USER: github_login
+        GIT_PSW: github_token
+        GIT_BRANCH: github_branch
+        GIT_REPO: github_repo_url
+        GIT_EMAIL: your e-meil
+    ports:
+      - "8082:8082" # Map container port 8082 to host port 8082
+    environment:
+      NODE_ENV: production
+      PORT: "8080"
+      RMQ_HOST: "rabbitmq"
+      RMQ_PORT: "5672"
+      RMQ_USR: "login"
+      RMQ_PSW:  "**"
+      BRANCHLIST: "../data/branchlist.json"
+      UPLOAD_TMP: "../utemp"
+      UPLOAD_STORE: "../ustrg"      
+    volumes:
+      - .:/usr/src/app # Mount the current directory to the container
+    links:
+      - "rabbitmq"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    restart: always
+  wrk-srvc:
+    build:
+      context: .
+      dockerfile: ./nodered.dockerfile 
+      args:
+        GIT_USER: github_login
+        GIT_PSW: github_token        
+        GIT_BRANCH: github_branch
+        GIT_REPO: github_repo
+        GIT_EMAIL: your e-mail
+        FLOWS: "/data/wrk-srvc/worker_nr.json"    
+    ports:
+      - "1880:1880"
+    #volumes:
+    #  - /home/psh/psh_dev/github-io/github-io/tz-000029-rabbitmq/py-rabbit/learnamqp/tz-000001-init/learnamqp/nodered
+    links:
+      - "rabbitmq"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    restart: always    
+    environment:
+      RABBITMQ_USER: "login"
+      RABBITMQ_PASSWORD: "**"
+      RABBITMQ_HOST: "rabbitmq"
+      RABBITMQ_PORT: "5672"      
+      FLOWS: "/data/wrk-srvc/worker_nr.json"

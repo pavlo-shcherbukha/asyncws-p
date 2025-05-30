@@ -1,0 +1,1338 @@
+[
+    {
+        "id": "905835495b2fa28a",
+        "type": "tab",
+        "label": "worker1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8996356bc6983643",
+        "type": "subflow",
+        "name": "gettingTimeZoneSubflow",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "6b0d7d1b8857115b"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1200,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "960dc0e771de38a3",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1200,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "0686b0e734486341",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "30b4220ccb5793ab",
+        "type": "subflow",
+        "name": "httpErrorSubflow",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "30e4af43275bc4fb"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "30e4af43275bc4fb",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "e955753b6781052d",
+        "type": "subflow",
+        "name": "ProcessUploading",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "bfedf1d661e856eb"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 800,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "bfedf1d661e856eb",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "be783e796eed4d9b",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "5e95f6766f8c0e92",
+        "type": "subflow",
+        "name": "ProcessReport",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 200,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "ec3427c311b7fc68"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "ed53ee04b2ed7acc",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 840,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "680b40ae374a46d7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "3745ddbfa8c2ae06",
+        "type": "subflow",
+        "name": "createBranch",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 200,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "3a9f132b02b118fd"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "3a9f132b02b118fd",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 920,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "b270150462c80280",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "c063b510a6803d27",
+        "type": "subflow",
+        "name": "readBranchList",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "c36c49555780f555"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "e2e72ead9786ed2b",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1020,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "d93be2d0ce6fd90e",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "082a6f4cbe77cab9",
+        "type": "group",
+        "z": "905835495b2fa28a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8ca2051504f0509a",
+            "53a5d14287c58668",
+            "73f4d14159607cdb",
+            "faefd171847b38b3"
+        ],
+        "x": 894,
+        "y": 299,
+        "w": 292,
+        "h": 442
+    },
+    {
+        "id": "543b1772d9a143c3",
+        "type": "group",
+        "z": "905835495b2fa28a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d1daf0d9f8777d31",
+            "f9286b8455a6de88",
+            "c61cffe98c1e1348",
+            "20104d7ff88b8723",
+            "21366d530144c5e0"
+        ],
+        "x": 314,
+        "y": 159,
+        "w": 232,
+        "h": 722
+    },
+    {
+        "id": "e9647203c7798f8e",
+        "type": "amqp-broker",
+        "name": "rmq",
+        "host": "rabbitmq",
+        "port": 5672,
+        "vhost": "",
+        "tls": false,
+        "credsFromSettings": false
+    },
+    {
+        "id": "e8655004504070c0",
+        "type": "http request",
+        "z": "8996356bc6983643",
+        "name": "RequestTime",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": true,
+        "headers": [
+            {
+                "keyType": "Accept",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            }
+        ],
+        "x": 770,
+        "y": 200,
+        "wires": [
+            [
+                "0fd25ffec343bf6d",
+                "960dc0e771de38a3"
+            ]
+        ]
+    },
+    {
+        "id": "0fd25ffec343bf6d",
+        "type": "debug",
+        "z": "8996356bc6983643",
+        "name": "LOG-OKOut",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6b0d7d1b8857115b",
+        "type": "function",
+        "z": "8996356bc6983643",
+        "name": "PrepareRequest",
+        "func": "if (msg.properties && msg.properties.replyTo) {\n    msg.topic = msg.properties.replyTo; // Встановлюємо topic як replyTo\n} \ndelete msg.properties.replyTo;\n\nmsg.method='GET';\n\nif (!msg.payload.region){\n    throw \"property region does not received\";\n}\n\n\nif (!msg.payload.city){\n    throw \"property city does not received\";\n}\n\nmsg.url=\"http://worldtimeapi.org/api/timezone/\"+msg.payload.region+\"/\"+msg.payload.city;\n\n//node.error(\"test\",msg);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "e8655004504070c0"
+            ]
+        ]
+    },
+    {
+        "id": "bfc2dea27144dfd9",
+        "type": "catch",
+        "z": "8996356bc6983643",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "c36d77ec522c1094",
+                "0686b0e734486341"
+            ]
+        ]
+    },
+    {
+        "id": "c36d77ec522c1094",
+        "type": "debug",
+        "z": "8996356bc6983643",
+        "name": "LOG-CatchError",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "960dc0e771de38a3",
+        "type": "function",
+        "z": "8996356bc6983643",
+        "name": "PrepareResponseOK",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 200,
+        "wires": [
+            [
+                "96e1b3e1c7a6047c"
+            ]
+        ]
+    },
+    {
+        "id": "96e1b3e1c7a6047c",
+        "type": "debug",
+        "z": "8996356bc6983643",
+        "name": "LOG-SendResponsOK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0686b0e734486341",
+        "type": "subflow:30b4220ccb5793ab",
+        "z": "8996356bc6983643",
+        "name": "",
+        "x": 790,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af81bcb0894df06b",
+        "type": "comment",
+        "z": "8996356bc6983643",
+        "name": "Get Global Time By Region and City",
+        "info": "",
+        "x": 460,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "30e4af43275bc4fb",
+        "type": "function",
+        "z": "30b4220ccb5793ab",
+        "name": "PrepareErrorResponse",
+        "func": "\nlet errpayload={}\nerrpayload.Error={}\nerrpayload.Error.errorcode=\"HttpRequestError\"\nerrpayload.Error.errormessage=msg.error.message;\nerrpayload.Error.type=msg.error.source.type;\nerrpayload.Error.name=msg.error.source.name;\nerrpayload.Error.stack=msg.error.stack;\nerrpayload.Error.statuscode=422;\nmsg.payload=errpayload;\ndelete msg[\"error\"];\ndelete msg[\"method\"];\ndelete msg[\"url\"];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "0c7f1abcfa6723d2"
+            ]
+        ]
+    },
+    {
+        "id": "0c7f1abcfa6723d2",
+        "type": "debug",
+        "z": "30b4220ccb5793ab",
+        "name": "LogHttpErrorResponse",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "be783e796eed4d9b",
+        "type": "subflow:30b4220ccb5793ab",
+        "z": "e955753b6781052d",
+        "name": "",
+        "x": 610,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe15e80e80780e99",
+        "type": "catch",
+        "z": "e955753b6781052d",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "be783e796eed4d9b"
+            ]
+        ]
+    },
+    {
+        "id": "bfedf1d661e856eb",
+        "type": "function",
+        "z": "e955753b6781052d",
+        "name": "ProcessUploading",
+        "func": "if (msg.properties && msg.properties.replyTo) {\n    msg.topic = msg.properties.replyTo; // Встановлюємо topic як replyTo\n} \ndelete msg.properties.replyTo;\nlet processresult={}\nprocessresult.ok=msg.payload.ok;\nprocessresult.message=msg.payload.message;\nprocessresult.fields=msg.payload.fields\nprocessresult.files=[]\nfor (const fileitem of msg.payload.files) {\n    let item={}\n    item.filename=fileitem.filename;\n    item.filemime=fileitem.filemime;\n    processresult.files.push(item);\n\n}\n\n//throw \"ERROROR RRRRR RRRRR\";\n\nmsg.payload = processresult;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "680b40ae374a46d7",
+        "type": "subflow:30b4220ccb5793ab",
+        "z": "5e95f6766f8c0e92",
+        "name": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fb1a2a5397a03a1",
+        "type": "catch",
+        "z": "5e95f6766f8c0e92",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "680b40ae374a46d7",
+                "ac532dcf76fe890a"
+            ]
+        ]
+    },
+    {
+        "id": "ec3427c311b7fc68",
+        "type": "function",
+        "z": "5e95f6766f8c0e92",
+        "name": "ProcessUploading",
+        "func": "if (msg.properties && msg.properties.replyTo) {\n    msg.topic = msg.properties.replyTo; // Встановлюємо topic як replyTo\n} \ndelete msg.properties.replyTo;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "4b0b766e95f0e463",
+                "3f6f5428f047dc22"
+            ]
+        ]
+    },
+    {
+        "id": "4b0b766e95f0e463",
+        "type": "file in",
+        "z": "5e95f6766f8c0e92",
+        "name": "ReadReportFile",
+        "filename": "/data/wrk-srvc/products.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "ed53ee04b2ed7acc",
+                "262d4600d0e06612"
+            ]
+        ]
+    },
+    {
+        "id": "ed53ee04b2ed7acc",
+        "type": "function",
+        "z": "5e95f6766f8c0e92",
+        "name": "PrepareResponse",
+        "func": "\nlet out = JSON.parse(msg.payload);\nmsg.payload=out;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f6f5428f047dc22",
+        "type": "debug",
+        "z": "5e95f6766f8c0e92",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "262d4600d0e06612",
+        "type": "debug",
+        "z": "5e95f6766f8c0e92",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ac532dcf76fe890a",
+        "type": "debug",
+        "z": "5e95f6766f8c0e92",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b270150462c80280",
+        "type": "subflow:30b4220ccb5793ab",
+        "z": "3745ddbfa8c2ae06",
+        "name": "",
+        "x": 650,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a4e550269d9f41c",
+        "type": "catch",
+        "z": "3745ddbfa8c2ae06",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "b270150462c80280"
+            ]
+        ]
+    },
+    {
+        "id": "3a9f132b02b118fd",
+        "type": "function",
+        "z": "3745ddbfa8c2ae06",
+        "name": "ProcessUploading",
+        "func": "if (msg.properties && msg.properties.replyTo) {\n    msg.topic = msg.properties.replyTo; // Встановлюємо topic як replyTo\n} \ndelete msg.properties.replyTo;\n\nmsg.payload={\n    ok: true,\n    branchid: \"1234-4321-2222-3333\"\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d93be2d0ce6fd90e",
+        "type": "subflow:30b4220ccb5793ab",
+        "z": "c063b510a6803d27",
+        "name": "",
+        "x": 550,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a81b8f0366811b91",
+        "type": "catch",
+        "z": "c063b510a6803d27",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "d93be2d0ce6fd90e",
+                "0a466ce515c4132c"
+            ]
+        ]
+    },
+    {
+        "id": "c36c49555780f555",
+        "type": "function",
+        "z": "c063b510a6803d27",
+        "name": "ProcessUploading",
+        "func": "if (msg.properties && msg.properties.replyTo) {\n    msg.topic = msg.properties.replyTo; // Встановлюємо topic як replyTo\n} \ndelete msg.properties.replyTo;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "83712d38717306db",
+                "18e862f2e2698259"
+            ]
+        ]
+    },
+    {
+        "id": "83712d38717306db",
+        "type": "file in",
+        "z": "c063b510a6803d27",
+        "name": "ReadReportFile",
+        "filename": "/data/api-srvc/data/branchlist.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "e2e72ead9786ed2b",
+                "6eaf73c7ccebc3cf"
+            ]
+        ]
+    },
+    {
+        "id": "e2e72ead9786ed2b",
+        "type": "function",
+        "z": "c063b510a6803d27",
+        "name": "PrepareResponse",
+        "func": "\nlet out = JSON.parse(msg.payload);\nmsg.payload=out;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18e862f2e2698259",
+        "type": "debug",
+        "z": "c063b510a6803d27",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6eaf73c7ccebc3cf",
+        "type": "debug",
+        "z": "c063b510a6803d27",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0a466ce515c4132c",
+        "type": "debug",
+        "z": "c063b510a6803d27",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c33ed404a769969b",
+        "type": "amqp-in",
+        "z": "905835495b2fa28a",
+        "name": "normal-requests-q",
+        "broker": "e9647203c7798f8e",
+        "prefetch": 0,
+        "reconnectOnError": false,
+        "noAck": true,
+        "exchangeName": "",
+        "exchangeType": "direct",
+        "exchangeRoutingKey": "",
+        "exchangeDurable": true,
+        "queueName": "wsq_requests",
+        "queueType": "classic",
+        "queueExclusive": false,
+        "queueDurable": true,
+        "queueAutoDelete": false,
+        "headers": "{}",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "b359e54f990ae13c",
+                "f9286b8455a6de88",
+                "20104d7ff88b8723",
+                "21366d530144c5e0"
+            ]
+        ]
+    },
+    {
+        "id": "d2be07c7f2cad5d4",
+        "type": "amqp-out",
+        "z": "905835495b2fa28a",
+        "name": "wsResponses",
+        "broker": "e9647203c7798f8e",
+        "reconnectOnError": false,
+        "exchangeName": "",
+        "exchangeType": "direct",
+        "exchangeRoutingKey": "topic",
+        "exchangeRoutingKeyType": "msg",
+        "exchangeDurable": false,
+        "amqpProperties": "{ \"headers\": {} }",
+        "rpcTimeoutMilliseconds": 3000,
+        "outputs": 0,
+        "x": 1320,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b359e54f990ae13c",
+        "type": "debug",
+        "z": "905835495b2fa28a",
+        "name": "LOG-Q-COM",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 170,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "de9f958e9fef1102",
+        "type": "comment",
+        "z": "905835495b2fa28a",
+        "name": "Back-End для web service",
+        "info": "Фактично фиконує обробку повідомлень і формування відповідей",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d1daf0d9f8777d31",
+        "type": "switch",
+        "z": "905835495b2fa28a",
+        "g": "543b1772d9a143c3",
+        "name": "api-report",
+        "property": "properties.headers.x-request-type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "report",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 840,
+        "wires": [
+            [
+                "b1e8e18ecd9356fa"
+            ]
+        ]
+    },
+    {
+        "id": "f9286b8455a6de88",
+        "type": "switch",
+        "z": "905835495b2fa28a",
+        "g": "543b1772d9a143c3",
+        "name": "api-branch-create",
+        "property": "properties.headers.x-request-type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "createBranch",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "ca1008d0f86448bd"
+            ]
+        ]
+    },
+    {
+        "id": "c61cffe98c1e1348",
+        "type": "switch",
+        "z": "905835495b2fa28a",
+        "g": "543b1772d9a143c3",
+        "name": "api-uplfile",
+        "property": "properties.headers.x-request-type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "uploadfile",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 680,
+        "wires": [
+            [
+                "2b0c2fa741973ef3"
+            ]
+        ]
+    },
+    {
+        "id": "c93e69122e70cb34",
+        "type": "amqp-in",
+        "z": "905835495b2fa28a",
+        "name": "heavy-requests-q",
+        "broker": "e9647203c7798f8e",
+        "prefetch": 0,
+        "reconnectOnError": true,
+        "noAck": true,
+        "exchangeName": "",
+        "exchangeType": "topic",
+        "exchangeRoutingKey": "",
+        "exchangeDurable": false,
+        "queueName": "wsq_uplfilerequests",
+        "queueType": "classic",
+        "queueExclusive": false,
+        "queueDurable": true,
+        "queueAutoDelete": false,
+        "headers": "{}",
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "c61cffe98c1e1348",
+                "9d0da20c08690aa9",
+                "d1daf0d9f8777d31"
+            ]
+        ]
+    },
+    {
+        "id": "9d0da20c08690aa9",
+        "type": "debug",
+        "z": "905835495b2fa28a",
+        "name": "LOG-Q-BIG",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2b0c2fa741973ef3",
+        "type": "subflow:e955753b6781052d",
+        "z": "905835495b2fa28a",
+        "name": "",
+        "x": 670,
+        "y": 680,
+        "wires": [
+            [
+                "faefd171847b38b3"
+            ],
+            [
+                "73f4d14159607cdb"
+            ]
+        ]
+    },
+    {
+        "id": "b1e8e18ecd9356fa",
+        "type": "subflow:5e95f6766f8c0e92",
+        "z": "905835495b2fa28a",
+        "name": "",
+        "x": 660,
+        "y": 840,
+        "wires": [
+            [
+                "faefd171847b38b3"
+            ],
+            [
+                "73f4d14159607cdb"
+            ]
+        ]
+    },
+    {
+        "id": "8ca2051504f0509a",
+        "type": "debug",
+        "z": "905835495b2fa28a",
+        "g": "082a6f4cbe77cab9",
+        "name": "LOG-ERR",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ca1008d0f86448bd",
+        "type": "subflow:3745ddbfa8c2ae06",
+        "z": "905835495b2fa28a",
+        "name": "",
+        "x": 650,
+        "y": 480,
+        "wires": [
+            [
+                "faefd171847b38b3"
+            ],
+            [
+                "73f4d14159607cdb"
+            ]
+        ]
+    },
+    {
+        "id": "20104d7ff88b8723",
+        "type": "switch",
+        "z": "905835495b2fa28a",
+        "g": "543b1772d9a143c3",
+        "name": "api-branch-list",
+        "property": "properties.headers.x-request-type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "readBranchList",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "03fdf428485391a7"
+            ]
+        ]
+    },
+    {
+        "id": "03fdf428485391a7",
+        "type": "subflow:c063b510a6803d27",
+        "z": "905835495b2fa28a",
+        "name": "",
+        "x": 660,
+        "y": 360,
+        "wires": [
+            [
+                "faefd171847b38b3"
+            ],
+            [
+                "73f4d14159607cdb"
+            ]
+        ]
+    },
+    {
+        "id": "21366d530144c5e0",
+        "type": "switch",
+        "z": "905835495b2fa28a",
+        "g": "543b1772d9a143c3",
+        "name": "api-read-time",
+        "property": "properties.headers.x-request-type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "readTime",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "2c7884c971ea91d5"
+            ]
+        ]
+    },
+    {
+        "id": "2c7884c971ea91d5",
+        "type": "subflow:8996356bc6983643",
+        "z": "905835495b2fa28a",
+        "name": "",
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "faefd171847b38b3"
+            ],
+            [
+                "73f4d14159607cdb"
+            ]
+        ]
+    },
+    {
+        "id": "53a5d14287c58668",
+        "type": "debug",
+        "z": "905835495b2fa28a",
+        "g": "082a6f4cbe77cab9",
+        "name": "LOG-OK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "73f4d14159607cdb",
+        "type": "function",
+        "z": "905835495b2fa28a",
+        "g": "082a6f4cbe77cab9",
+        "name": "SetHttpStatusCodeError",
+        "func": "msg.properties.headers.http_status_code=msg.payload.Error.statuscode\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 640,
+        "wires": [
+            [
+                "d2be07c7f2cad5d4",
+                "8ca2051504f0509a"
+            ]
+        ]
+    },
+    {
+        "id": "faefd171847b38b3",
+        "type": "function",
+        "z": "905835495b2fa28a",
+        "g": "082a6f4cbe77cab9",
+        "name": "SetHttpStatuCodeOK",
+        "func": "msg.properties.headers.http_status_code=200\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 400,
+        "wires": [
+            [
+                "d2be07c7f2cad5d4",
+                "53a5d14287c58668"
+            ]
+        ]
+    },
+    {
+        "id": "2b310d9b3de1d0de",
+        "type": "comment",
+        "z": "905835495b2fa28a",
+        "name": "Формування відповіді для фронта з врахуванням http status-code",
+        "info": "",
+        "x": 1160,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ae47689481220639",
+        "type": "comment",
+        "z": "905835495b2fa28a",
+        "name": "Роутери повідомлень у відповідні обробники",
+        "info": "Роутинг відбувається на основі прикладних заголовків повідомлення в черзі\n\n\n```\nproperties.headers.x-request-type\n\n```",
+        "x": 380,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "09199a0b74e45732",
+        "type": "comment",
+        "z": "905835495b2fa28a",
+        "name": "Черга нормальних методів",
+        "info": "",
+        "x": 160,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "56ed2ed40e9a5f49",
+        "type": "comment",
+        "z": "905835495b2fa28a",
+        "name": "Черга важких методів",
+        "info": "",
+        "x": 140,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "0d52873813333c6d",
+        "type": "comment",
+        "z": "905835495b2fa28a",
+        "name": "Черга відповідей",
+        "info": "",
+        "x": 1300,
+        "y": 440,
+        "wires": []
+    }
+]
