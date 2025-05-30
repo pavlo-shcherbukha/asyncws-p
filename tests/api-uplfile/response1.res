@@ -1,0 +1,1 @@
+{"ok":true,"message":"file uploded","fields":[{"fieldname":"formfield1","fieldvalue":"myvalue1"},{"fieldname":"formfield2","fieldvalue":"myvalue2"}],"files":[{"filename":"krisa1.jpg","filemime":"image/jpeg"}]}

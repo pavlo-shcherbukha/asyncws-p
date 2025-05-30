@@ -5,7 +5,7 @@ function pause(){
 }
 
 
-export XURL=http://localhost:8084/api/globaltime
+export XURL=http://localhost:8082/api/globaltime
 export XREQ=globaltime_1.json
 export XRES=globaltime_1.res
 

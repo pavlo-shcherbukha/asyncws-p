@@ -7,7 +7,7 @@ function pause(){
 echo "Testing upload fiesld and file as multipart/form-data"
 echo "result in response.res"
 
-export XURL=http://localhost:8084/api/uplfile
+export XURL=http://localhost:8082/api/uplfile
 export XRES=response1.res
 
 XCURL="curl -k --verbose -X POST \"$XURL\" -o \"$XRES\" \
